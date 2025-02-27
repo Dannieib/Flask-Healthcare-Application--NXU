@@ -8,8 +8,8 @@ import os
 app = Flask(__name__)
 
 # MongoDB connection
-client = MongoClient("mongodb://localhost:27017/") #Incase you intend to run it locally, Please, specify your own mongodb port
-db = client["survey_db"]
+client = MongoClient("mongodb+srv://danielibanga:wDjd8F8v53A55xfV@nxu.clvnx.mongodb.net/?retryWrites=true&w=majority&appName=NXU")
+db = client["user_data"]
 collection = db["user_data"]
 
 
