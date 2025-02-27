@@ -9,8 +9,8 @@ services:
     branch: main
     envVars:
       - key: PYTHONPATH
-        value: "/opt/render/project/src"
-    buildCommand: pip install -r src/requirements.txt
+        value: "/opt/render/project/Src"
+    buildCommand: pip install -r Src/requirements.txt
     startCommand: gunicorn -w 4 -b 0.0.0.0:5000 src.app:app
     autoDeploy: true
     maxShutdownDelaySeconds: 300
