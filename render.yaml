@@ -11,6 +11,6 @@ services:
       - key: PYTHONPATH
         value: "/opt/render/project/Src"
     buildCommand: pip install -r Src/requirements.txt
-    startCommand: gunicorn -w 4 -b 0.0.0.0:5000 src.app:app
+    startCommand: gunicorn -w 4 -b 0.0.0.0:5000 Src.app:app
     autoDeploy: false
     maxShutdownDelaySeconds: 300
