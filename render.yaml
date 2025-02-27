@@ -7,7 +7,7 @@ services:
     region: frankfurt
     plan: starter
     branch: main
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install
     preDeployCommand: python migrate.py
     startCommand: gunicorn -w 4 -b 0.0.0.0:5000 app:app
     autoDeploy: false
